@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3194929292",
     "id" : "50496F19",
-    "lastKnownWriteTime" : 1522809506,
-    "last_content_update" : 1522809506324,
+    "lastKnownWriteTime" : 1522809817,
+    "last_content_update" : 1522809817183,
     "path" : "~/census-app/server.R",
     "project_path" : "server.R",
     "properties" : {
-        "cursorPosition" : "42,29",
-        "scrollLine" : "20"
+        "cursorPosition" : "33,0",
+        "scrollLine" : "5"
     },
     "relative_order" : 4,
     "source_on_save" : false,
