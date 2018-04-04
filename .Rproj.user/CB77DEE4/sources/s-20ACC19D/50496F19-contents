@@ -20,13 +20,29 @@ shinyServer(
                     "Percent Asian" = "purple")
       
       title <- switch(input$var, 
-                    "Percent White" = "% White",
-                    "Percent Black" = "% Black",
-                    "Percent Hispanic" = "% Hispanic",
-                    "Percent Asian" = "% Asian")
+                      "Percent White" = "% White",
+                      "Percent Black" = "% Black",
+                      "Percent Hispanic" = "% Hispanic",
+                      "Percent Asian" = "% Asian")
       
       
       percent_map(var = pop , color = col, title, max = input$range[2], min = input$range[1])
+    })
+    
+  }
+)
+# server.R
+source("helpers.R")
+counties <- readRDS("data/counties.rds")
+library(maps)
+library(mapproj)
+
+shinyServer(
+  function(input, output) {
+    
+    output$map <- renderPlot({
+      
+      percent_map(counties, color = "blue")
     })
       
   }
